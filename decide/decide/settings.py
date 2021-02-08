@@ -165,9 +165,7 @@ KEYBITS = 256
 ALLOWED_VERSIONS = ['v1', 'v2']
 DEFAULT_VERSION = 'v1'
 
-BASEURL = "https://mypruebasegc.herokuapp.com"
-
-APIS = {}
+BASEURL = 'https://mypruebasegc.herokuapp.com'
 
 try:
     from local_settings import *
@@ -184,6 +182,8 @@ if os.path.exists("config.jsonnet"):
 
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
+
+APIS = {}
 
 import django_heroku
 django_heroku.settings(locals())
